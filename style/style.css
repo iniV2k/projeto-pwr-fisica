@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
 
+/*Formatação geral*/
 body {
     font-family: 'Inria Sans', sans-serif;
     margin: 0;
@@ -35,9 +36,13 @@ nav a {
     text-decoration: none;
     color: #3a67d1;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
 nav a:hover {
+    transform: scale(1.1);
+    font-size: 1.02em;
     color: black;
 }
 
@@ -93,11 +98,13 @@ nav a:hover {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Formatação para centralizar algumas imagens*/
 .img-format-geral {
     display: flex;
     margin: 0 auto;
 }
 
+/* Formatação para arrumar a imagem de Georg S. Ohm*/
 .img-ohm {
     width: 220px;
     height: 220px;
@@ -106,6 +113,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Centralizar imagem do circuito de ohm */
 .img-circuito-ohm {
     display: block;
     max-width: 0 auto;
@@ -120,19 +128,12 @@ h1, h2 {
     font-family: 'Inter', sans-serif;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    background: white;
-    margin-top: 20px;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* Justificar parágrafos */
 p {
     text-align: justify;
 }
 
+/* Formatação da tabela de resistividade */
 table {
     width: 50%;
     border-collapse: collapse;
@@ -149,6 +150,7 @@ th {
     background-color: #f2f2f2;
 }
 
+/* Centralizar icone de estrela no rodapé */
 #star-icon {
     display: flex;
     justify-content: center;
@@ -161,7 +163,7 @@ th {
     align-items: center;
 }
 
-/* Simulação */
+/* Formataão da simulação dos valores da 1 lei de ohm*/
 .simulacao {
     margin-top: 30px;
     width: 60%;
@@ -189,6 +191,7 @@ th {
     font-size: 18px;
 }
 
+/* Formatação do rodapé */
 .footer {
     display: flex;
     justify-content: space-around;
@@ -254,6 +257,10 @@ th {
         background: white;
         padding: 20px;
     }
+
+    .img-format-tela-menor {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -297,6 +304,18 @@ th {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    .footer-column-2 {
+        justify-items: center;
+    }
+
+    .img-format-geral {
+        width: 50%;
+    }
+
+    .img-format-tela-menor {
+        width: 70%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -319,4 +338,5 @@ th {
         width: 80%;
         margin-bottom: 10px;
     }
+    
 }

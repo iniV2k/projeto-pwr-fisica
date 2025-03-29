@@ -15,10 +15,9 @@
 
     <nav>
         <div class="nav-items">
-            <a href="index.html">Home</a>
+            <a href="index.html">Página inicial</a>
             <a href="lei-1.html">1ª Lei</a>
-            <a href="lei-2.html">2ª Lei</a>
-            <a href="lei-3.html">3ª Lei</a>
+            <a href="lei-2.html" style="color: black;">2ª Lei</a>
             <a href="gabarito.html">Gabarito</a>
         </div>
         <div class="search-bar">
@@ -50,7 +49,7 @@
                 passagem de corrente elétrica.
             </p>
 
-            <img class="img-format-geral" src="imagens/fio-condutor.jpg"
+            <img class="img-format-geral img-format-tela-menor" src="imagens/fio-condutor.jpg"
                 alt="fio condutor, contendo raio do fio (R), comprimento do fio (I) e área do fio (A)">
 
             <p>A fórmula desta lei é representada por:</p>
@@ -60,14 +59,15 @@
 
             <p>
                 Tal que:<br><br>
-                R – resistência elétrica (Ω – Omhs)<br>
-                ρ – resistividade (Ω * m – Ohms vezes metro)<br>
-                L – comprimento do corpo (m – metros)<br>
-                A – área transversal do corpo (m² – metros quadrados)<br>
+                <strong>R – resistência elétrica (Ω – Omhs)</strong><br>
+                <strong>ρ – resistividade (Ω * m – Ohms vezes metro)</strong><br>
+                <strong>L – comprimento do corpo (m – metros)</strong><br>
+                <strong>A – área transversal do corpo (m² – metros quadrados)</strong><br>
             </p>
 
             <p>
-                A resistividade, simbolizada pela letra ρ, é uma característica do material que está relacionada a
+                A resistividade, simbolizada pela letra <strong>ρ</strong>, é uma característica do material que está
+                relacionada a
                 propriedades microscópicas, como a quantidade de portadores de carga (elétrons, no caso dos metais)
                 presentes para conduzir a eletricidade e o tempo em que essas cargas conseguem se mover sem sofrer
                 colisões com a rede cristalina do material (arranjo dos átomos). Além disso, a resistividade é definida
@@ -80,15 +80,15 @@
 
             <p>
                 Tal que:<br><br>
-                ρ – resistividade (Ω * m – Ohms vezes metro)<br>
-                σ – condutividade (Ω-1.m-1 inverso de ohms vezes metro) <br>
+                <strong>ρ – resistividade (Ω x m – Ohms vezes metro)</strong><br>
+                <strong>σ – condutividade (Ω-1 . m-1  inverso de ohms vezes metro)</strong><br>
             </p>
 
             <h2 class="h2-format">Tabela de resistividade</h2>
             <p>
                 A resistividade é uma das grandezas físicas que possui uma ampla variação de valores, podendo oscilar
                 entre as ordens de grandeza de 10-6 até 1018. A tabela abaixo mostra os valores de resistividade para
-                alguns materiais conhecidos. 
+                alguns materiais conhecidos.
             </p>
 
             <table style="width: 100%;">
@@ -124,7 +124,43 @@
                 </tbody>
             </table>
 
+            <h2 class="h2-format">Exemplos:</h2>
+            <p>
+                A seguir nós temos alguns exemplos para fixar:
+            </p>
+
+            <ul>
+                <li>
+                    Variação da resistência com o comprimento do fio:<br><br>
+                    Se um fio de cobre tem 1 m de comprimento e resistência de 0,02 Ω, ao aumentar seu
+                    comprimento para 10 m, sua resistência também aumentará proporcionalmente:<br>
+                    R' = R × (L' / L) = 0,02Ω × (10m / 1m) = 0,2Ω
+                </li>
+                <br><br>
+                <li>
+                    Comparação entre cobre e alumínio:<br><br>
+                    O cobre tem uma resistividade menor que o alumínio (ρ_cobre = 1,7 × 10−8 Ω·m e ρ_alumínio
+                    = 2,8 × 10−8 Ω·m). Se dois fios tiverem o mesmo comprimento e espessura, o de alumínio
+                    apresentará maior resistência elétrica, resultando em maior perda de energia:<br>
+                    ρ_cobre = 1,7 × 10−8 Ω·m, ρ_alumínio = 2,8 × 10−8 Ω·m
+
+                </li>
+                <br><br>
+                <li>
+                    Influência da espessura:<br><br>
+                    Se dois fios de mesmo material e comprimento possuem diâmetros diferentes, o mais fino
+                    terá maior resistência, pois a área da seção transversal (A) influencia inversamente a
+                    resistência. Por exemplo, se um fio de cobre têm A = 1 mm2 e resistência R = 0,1 Ω, um fio
+                    com A = 4 mm2 terá resistência reduzida pela metade:<br>
+                    R' = R × (A / A') = 0,1Ω × (1mm2 / 4mm2) = 0,025Ω
+                </li>
+            </ul>
+
             <h2 class="h2-format">Exercícios</h2>
+            <p>
+                <a target="_blank" href="exercicios-lei-2.html">Clique aqui</a> para ir para os exercícios sobre a 2ª
+                Lei de Ohm
+            </p>
 
         </div>
     </main>
@@ -142,13 +178,10 @@
             </ul>
         </div>
 
-        <div class="footer-column">
-            <h3>Cursos e Turmas:</h3>
-            <p>Ciências da Computação</p>
-            <p>Turma - </p>
-
-            <p>Sistemas de Informação</p>
-            <p>Turma - </p>
+        <div class="footer-column footer-column-2">
+            <h3>Cursos e Turmas</h3>
+            <p>Ciências da Computação: Turma - CC1Q13</p>
+            <p>Sistemas de Informação: Turma - SI1P13</p>
         </div>
 
         <div class="footer-column star-column">
