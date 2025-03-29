@@ -13,7 +13,7 @@ header {
     color: white;
     padding: 0.5em 0 0.5em 2em;
     text-align: left;
-    border: 1px solid black;
+    border: 0.25px solid black;
     font-size: 64px;
     font-weight: bold;
     font-family: 'Oleo Script Swash Caps', sans-serif;
@@ -81,11 +81,24 @@ nav a:hover {
     padding: 20px;
 }
 
+.h1-format, .h2-format {
+    color: #24458B;
+}
+
+.h2-format {
+    margin: 20px 0 0 0;
+}
+
 .container {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-img {
+.img-format-geral {
+    display: flex;
+    margin: 0 auto;
+}
+
+.img-ohm {
     width: 220px;
     height: 220px;
     float: left;
@@ -93,7 +106,16 @@ img {
     border-radius: 5px;
 }
 
-h2 {
+.img-circuito-ohm {
+    display: block;
+    max-width: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1, h2 {
     color: #3a67d1;
     font-family: 'Inter', sans-serif;
 }
