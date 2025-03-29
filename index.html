@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leis de Ohm</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header>Leis de Ohm</header>
+
+    <nav>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="#">1ª Lei</a>
+            <a href="#">2ª Lei</a>
+            <a href="#">3ª Lei</a>
+            <a href="#">Gabarito</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">
+                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Ícone de pesquisa">
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="content">
+            <img src="imagens/Georg-Simon-Ohm.jpeg" alt="Imagem de Ohm">
+            <p> 
+                Uma das matérias mais vistas no ensino médio e vestibulares, por muitas vezes explicada de forma
+                leviana, aqui, repassaremos com muita atenção evidenciando os pontos mais importantes com calma e clareza.
+            </p>
+            <p>
+                Ao decorrer desta página e extensões, veremos cálculos, exemplos de uso, pequenas dicas e até
+                curiosidades sobre a 1ª Lei, 2ª Lei e 3ª Lei de Ohm.
+            </p>
+            <p>
+                As Leis de Ohm referem-se ao cálculo sobre importantes componentes de um circuito elétrico.
+                A única particularidade dessas leis são sua exclusividade apenas com resistências ôhmicas, isto é,
+                corpos onde a resistência elétrica seja constante, independente da corrente e tensão.
+            </p>
+
+            <h2>Descoberta de Ohm</h2>
+            <p>
+                A descoberta dessas leis que hoje carregam um peso definitivo sobre a natureza em correntes elétricas foi
+                feita pelo alemão Georg Simon Ohm. A origem dessa revelação se leva à época após a publicação do
+                primeiro livro do físico em 1817 e a primeira fase de seu reconhecimento, onde uma escola jesuíta disponibilizou
+                seu laboratório para Ohm, e este mesmo espaço foi responsável por oferecer uma iniciativa para seus estudos
+                de circuitos elétricos, uma área praticamente inexplorada na época.
+            </p>
+                
+            <p>
+                Depois de uma série de publicações sobre as leis dos circuitos, Ohm reparou que tais diretrizes não
+                somente concordavam com suas experiências, mas também incorporavam explicações de diversos
+                acontecimentos em circuitos elétricos, e por isso o mesmo argumentou que suas descobertas e principalmente as duas Leis
+                deveriam ser consideradas como uma lei da Natureza.
+            </p>
+
+            <h2>Calculadora de Ohm</h2>
+            <p>
+                E aprimorando a sua capacidade nesta matéria também visualizamos abaixo uma Calculadora de Ohm
+                desenvolvida especialmente para apliar seu estudos neste tópico da disciplina. Esta calculadora funciona
+                preenchendo os campos desejados e deixando em branco aquele em que deseja-se saber a variável.
+            </p>
+
+            <div class="simulacao">
+                <div class="inputs">
+                    <div class="input-group">
+                        <label for="v-slider">Tensão (V): <span id="v-value">10</span> V</label>
+                        <input type="range" id="v-slider" min="0" max="100" value="10" step="1">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="i-slider">Corrente (I): <span id="i-value">1</span> A</label>
+                        <input type="range" id="i-slider" min="0" max="10" value="1" step="0.1">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="r-slider">Resistência (R): <span id="r-value">10</span> Ω</label>
+                        <input type="range" id="r-slider" min="0" max="100" value="10" step="1">
+                    </div>
+                </div>
+
+                <div class="output">
+                    <p><strong>Equação:</strong> V = I * R</p>
+                    <p>Valor de V: <span id="v-output">10</span> V</p>
+                    <p>Valor de I: <span id="i-output">1</span> A</p>
+                    <p>Valor de R: <span id="r-output">10</span> Ω</p>
+                    <p><strong>Resultado da simulação:</strong> V = <span id="simulated-result">10</span> V</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Feito por:</h3>
+            <ul>
+                <li>Flavia Morgado - F360164</li>
+                <li>Geovanna Silva - T12DD0</li>
+                <li>Heloísa Lemos - F364291</li>
+                <li>Kailane Mendes - R8706B1</li>
+                <li>Vinicius Ribeiro - H639FJ0</li>
+                <li>Thayna Rodrigues - R491CD5</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Cursos e Turmas:</h3>
+            <p>Ciências da Computação</p>
+            <p>Turma - </p>
+    
+            <p>Sistemas de Informação</p>
+            <p>Turma - </p>
+        </div>
+    
+        <div class="footer-column star-column">
+            <h3>"Desta forma desejamos a vocês ótimos estudos!"</h3>
+            <img src="imagens/star.png" alt="estrela" id="star-icon">
+        </div>
+    </footer>
+
+</body>
+
+</html>
