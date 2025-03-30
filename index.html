@@ -2,18 +2,24 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Configuração do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leis de Ohm</title>
+
+    <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Ícone da aba do navegador -->
     <link rel="shortcut icon" href="imagens/favicon.ico">
 </head>
 
 <body>
 
-    <!-- Cabeçalho página inicial -->
+    <!-- Cabeçalho principal -->
     <header>Leis de Ohm</header> 
 
+    <!-- Barra de navegação com links para diferentes páginas -->
     <nav>
         <div class="nav-items">
             <a href="index.html" style="color: black;">Página inicial</a>
@@ -21,6 +27,8 @@
             <a href="lei-2.html" id="lei-2">2ª Lei</a>
             <a href="gabarito.html" id="gabarito">Gabarito</a>
         </div>
+
+        <!-- Barra de pesquisa -->
         <div class="search-bar">
             <input type="text" placeholder="Pesquisar...">
             <button type="submit">
@@ -29,9 +37,14 @@
         </div>
     </nav>
 
+    <!-- Conteúdo principal -->
     <main class="container">
         <div class="content">
+            
+            <!-- Imagem do cientista Georg Simon Ohm -->
             <img class="img-ohm" src="imagens/Georg-Simon-Ohm.jpeg" alt="Imagem de Ohm">
+
+            <!-- Texto explicativo sobre as Leis de Ohm -->
             <p> 
                 Uma das matérias mais vistas no ensino médio e vestibulares, por muitas vezes explicada de forma
                 leviana, aqui, repassaremos com muita atenção evidenciando os pontos mais importantes com calma e clareza.
@@ -69,24 +82,30 @@
                 preenchendo os campos desejados e deixando em branco aquele em que deseja-se saber a variável.
             </p>
 
+            <!-- Simulação interativa da Lei de Ohm -->
             <div class="simulacao">
                 <div class="inputs">
+
+                    <!-- Controle deslizante para ajustar a tensão -->
                     <div class="input-group">
                         <label for="v-slider">Tensão (V): <span id="v-value">10</span> V</label>
                         <input type="range" id="v-slider" min="0" max="100" value="10" step="1">
                     </div>
 
+                    <!-- Controle deslizante para ajustar a corrente -->
                     <div class="input-group">
                         <label for="i-slider">Corrente (I): <span id="i-value">1</span> A</label>
                         <input type="range" id="i-slider" min="0" max="10" value="1" step="0.1">
                     </div>
 
+                    <!-- Controle deslizante para ajustar a resistência -->
                     <div class="input-group">
                         <label for="r-slider">Resistência (R): <span id="r-value">10</span> Ω</label>
                         <input type="range" id="r-slider" min="0" max="100" value="10" step="1">
                     </div>
                 </div>
 
+                <!-- Área de saída de resultados -->
                 <div class="output">
                     <p><strong>Equação:</strong> V = I * R</p>
                     <p>Valor de V: <span id="v-output">10</span> V</p>
@@ -99,7 +118,10 @@
         </div>
     </main>
 
+    <!-- Rodapé da página -->
     <footer class="footer">
+
+        <!-- Coluna com os autores do site -->
         <div class="footer-column">
             <h3>Feito por:</h3>
             <ul>
@@ -111,13 +133,15 @@
                 <li>Thayna Rodrigues - R491CD5</li>
             </ul>
         </div>
-    
+
+        <!-- Coluna com informações das turmas -->
         <div class="footer-column footer-column-2">
             <h3>Cursos e Turmas</h3>
             <p>Ciências da Computação: Turma - CC1Q13</p>
             <p>Sistemas de Informação: Turma - SI1P13</p>
         </div>
-    
+
+        <!-- Coluna decorativa com uma mensagem motivacional -->
         <div class="footer-column star-column">
             <h3>"Desta forma desejamos a vocês ótimos estudos!"</h3>
             <img src="imagens/star.png" alt="estrela" id="star-icon">

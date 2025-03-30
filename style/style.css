@@ -46,6 +46,7 @@ nav a:hover {
     color: black;
 }
 
+/* Formatação barra de pesquisa */
 .search-bar {
     display: flex;
     align-items: center;
@@ -78,6 +79,7 @@ nav a:hover {
     height: 16px;
 }
 
+/* Formatação conteúdo das páginas */
 .container,
 .content {
     width: 80%;
